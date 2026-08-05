@@ -130,7 +130,23 @@ nav.scrolled{background:rgba(11,11,12,.95);border-bottom:1px solid var(--line)}
   background:radial-gradient(ellipse at center, rgba(227,21,27,.16), transparent 65%);
   pointer-events:none;
 }
-.hero-eyebrow{justify-content:center;margin-bottom:28px}
+.hero-eyebrow{justify-content:center;margin-bottom:38px}
+.hero-logo{
+  display:block;
+  margin:0 auto;
+  width:min(720px, 88vw);
+  height:auto;
+  mix-blend-mode:screen;
+}
+.sr-only{
+  position:absolute;
+  width:1px;height:1px;
+  padding:0;margin:-1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  border:0;
+}
 .hero h1{
   font-family:var(--display);
   font-weight:900;
@@ -639,8 +655,8 @@ footer{
 <header class="hero" id="top">
   <div class="wrap">
     <div class="eyebrow hero-eyebrow">Est. to break chains</div>
-    <h1><span class="the">The</span>MOT<span class="one">1</span>VATOR</h1>
-    <p class="hero-tag">The fire inside <em>can't</em> be tamed</p>
+    <h1 class="sr-only">The MOT1VATOR Clothing</h1>
+    <img class="hero-logo" src="assets/logo.png" alt="THE MOT1VATOR — The fire inside can't be tamed" width="669" height="256">
     <div class="hero-actions">
       <a class="btn btn-red" href="#inquire">Make an Inquiry</a>
       <a class="btn btn-ghost" href="#seam">See What's Inside</a>
